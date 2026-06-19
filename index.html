@@ -69,25 +69,13 @@
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10 space-y-8">
       
-      <!-- Advertising Slot 1: Top Banner -->
-      <section class="w-full flex justify-center">
-        <div id="ad-banner-top" class="w-full max-w-[728px] h-[90px] rounded-xl glass-panel relative overflow-hidden flex items-center justify-between px-6 border-brand-purple/20 border group hover:border-brand-purple/40 transition-all duration-300">
-          <div class="absolute inset-0 bg-gradient-to-r from-brand-purple/5 via-transparent to-brand-cyan/5"></div>
-          <div class="flex items-center space-x-4 relative z-10">
-            <div class="w-10 h-10 rounded-lg bg-brand-purple/10 flex items-center justify-center text-brand-purple">
-              <i data-lucide="sparkles" class="w-5 h-5 animate-pulse"></i>
-            </div>
-            <div>
-              <p class="text-xs text-brand-purple font-semibold tracking-wider uppercase">精品精选广告 | 优质高阶云主机</p>
-              <h4 class="text-sm font-semibold text-gray-200 mt-0.5">极速稳定、CN2双程优化、专为开发者倾力打造</h4>
-            </div>
-          </div>
-          <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="relative z-10 px-4 py-2 text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-500 active:scale-95 rounded-lg border border-indigo-400/20 shadow-md transition-all">
-            点击立即体验
-          </a>
-          <div class="absolute bottom-1 right-2 text-[8px] tracking-widest text-gray-500 font-mono uppercase bg-black/40 px-1 rounded">SPONSOR AD</div>
-        </div>
-      </section>
+<!-- Advertising Slot 1: Top Banner (Pure Image, Clickable) -->
+<section class="w-full flex justify-center">
+  <a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer" id="ad-banner-top" class="block w-full max-w-[728px] h-[90px] rounded-xl relative overflow-hidden border-brand-purple/20 border group hover:border-brand-purple/40 transition-all duration-300">
+    < img src="/ad.png" alt="广告" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute bottom-1 right-2 text-[8px] tracking-widest text-gray-300 font-mono uppercase bg-black/40 px-1 rounded">SPONSOR AD</div>
+  </a >
+</section>
 
       <!-- Search Section & Core Dynamic Container -->
       <section id="ip-checker" class="space-y-6">
