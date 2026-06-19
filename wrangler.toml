@@ -1,0 +1,21 @@
+# Cloudflare Wrangler Configuration File
+# Read more about configuration options: https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "ip-speed-panel"
+main = "worker.ts"
+compatibility_date = "2023-12-01"
+
+# Environment boundaries can be added here
+[vars]
+ENVIRONMENT = "production"
+
+# Assets bindings (for deploying static Pages and backend combined)
+# This will compile and host the visual client straight on the edge!
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+# Rate Limiting configuration triggers to prevent DDoS and API abuse
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js", "**/*.ts"]

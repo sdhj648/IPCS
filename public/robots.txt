@@ -1,0 +1,7 @@
+# Robots.txt file for IP & Speed Panel
+# Allows all search engine spiders for indexation with sitemap link references
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ip-speed-panel.pages.dev/sitemap.xml

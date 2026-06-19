@@ -1,0 +1,6 @@
+{
+  "name": "IP Detector & Speed Test",
+  "description": "A minimalist, high-performance, and high-fidelity single-page IP detection and network speed test suite compatible with Cloudflare Pages and Workers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
